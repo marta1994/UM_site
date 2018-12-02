@@ -1,0 +1,24 @@
+.carousel_container {	
+	left: 0;
+	-webkit-transition: left 7s ease-out;
+	-moz-transition: left 7s ease-out;
+	-o-transition: left 7s ease-out;
+	transition: left 7s ease-out;
+}
+
+.carousel_container:hover {
+	left: -75%;
+}
+
+.um_logo {
+	opacity: 1;
+	-webkit-transition: opacity 1s ease-out;
+	-moz-transition: opacity 1s ease-out;
+	-o-transition: opacity 1s ease-out;
+	transition: opacity 1s ease-out;
+}
+
+.um_logo:hover {
+	opacity: 0.6;
+	cursor: pointer;
+}
