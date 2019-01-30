@@ -1,1 +1,6 @@
 /Landing/.vs
+*.log
+*.dll
+*.exe
+Landing/Landing/obj
+Landing/Landing/bin
