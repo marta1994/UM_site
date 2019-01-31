@@ -7,9 +7,9 @@
 
 @if (Model.DeviceType == Helpers.DeviceType.Desktop || Model.DeviceType == Helpers.DeviceType.Unknown)
 {
-    <div>Desktop</div>
+    @await Html.PartialAsync("~/Pages/Desktop/Index.cshtml", new Desktop.IndexModel(), new ViewDataDictionary(ViewData))
 }
 else
 {
-    <div>Mobile</div>
+    @await Html.PartialAsync("~/Pages/Mobile/Index.cshtml", new Mobile.IndexModel(), new ViewDataDictionary(ViewData))
 }
