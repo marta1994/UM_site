@@ -2,5 +2,8 @@
 *.log
 *.dll
 *.exe
-Landing/Landing/obj
-Landing/Landing/bin
+*.pdb
+/Landing/Landing/obj
+*/bin
+/Landing/wwwroot
+*/node_modules

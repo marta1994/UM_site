@@ -60,5 +60,6 @@ C:\UMsite\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Landing.Views.pdb
 C:\UMsite\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Landing.dll
 C:\UMsite\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Landing.pdb
 C:\UMsite\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Landing.csproj.CopyComplete
-C:\UMsite\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Razor\Pages\Mobile\Index.g.cshtml.cs
 C:\UMsite\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\UMsite\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Razor\Pages\Desktop\Index.g.cshtml.cs
+C:\UMsite\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Razor\Pages\Mobile\Index.g.cshtml.cs
