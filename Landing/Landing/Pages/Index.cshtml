@@ -5,3 +5,11 @@
 }
 
 
+@if (Model.DeviceType == Helpers.DeviceType.Desktop || Model.DeviceType == Helpers.DeviceType.Unknown)
+{
+    <div>Desktop</div>
+}
+else
+{
+    <div>Mobile</div>
+}
