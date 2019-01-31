@@ -5,7 +5,6 @@ D:\src\UM_site\Landing\Landing\bin\Debug\netcoreapp2.1\Landing.dll
 D:\src\UM_site\Landing\Landing\bin\Debug\netcoreapp2.1\Landing.pdb
 D:\src\UM_site\Landing\Landing\bin\Debug\netcoreapp2.1\Landing.Views.dll
 D:\src\UM_site\Landing\Landing\bin\Debug\netcoreapp2.1\Landing.Views.pdb
-D:\src\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Landing.csprojAssemblyReference.cache
 D:\src\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Landing.csproj.CoreCompileInputs.cache
 D:\src\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Landing.RazorAssemblyInfo.cache
 D:\src\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Landing.RazorAssemblyInfo.cs
@@ -16,15 +15,9 @@ D:\src\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Landing.TagHelpers.input.
 D:\src\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Landing.TagHelpers.output.cache
 D:\src\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Landing.RazorCoreGenerate.cache
 D:\src\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
-D:\src\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Razor\Pages\About.g.cshtml.cs
-D:\src\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Razor\Pages\Contact.g.cshtml.cs
-D:\src\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Razor\Pages\Error.g.cshtml.cs
 D:\src\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Razor\Pages\Index.g.cshtml.cs
-D:\src\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Razor\Pages\Privacy.g.cshtml.cs
 D:\src\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Razor\Pages\Shared\_CookieConsentPartial.g.cshtml.cs
 D:\src\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Razor\Pages\Shared\_Layout.g.cshtml.cs
-D:\src\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Razor\Pages\Shared\_LoginPartial.g.cshtml.cs
-D:\src\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Razor\Pages\Shared\_ValidationScriptsPartial.g.cshtml.cs
 D:\src\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Razor\Pages\_ViewImports.g.cshtml.cs
 D:\src\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Razor\Pages\_ViewStart.g.cshtml.cs
 D:\src\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Landing.RazorTargetAssemblyInfo.cache
@@ -63,3 +56,6 @@ C:\UMsite\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Landing.csproj.CopyCom
 C:\UMsite\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
 C:\UMsite\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Razor\Pages\Desktop\Index.g.cshtml.cs
 C:\UMsite\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Razor\Pages\Mobile\Index.g.cshtml.cs
+D:\src\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Razor\Pages\Desktop\Index.g.cshtml.cs
+D:\src\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Razor\Pages\Mobile\Index.g.cshtml.cs
+D:\src\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Landing.csprojAssemblyReference.cache
