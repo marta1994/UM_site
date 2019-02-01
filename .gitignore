@@ -3,7 +3,8 @@
 *.dll
 *.exe
 *.pdb
+*.css
 /Landing/Landing/obj
-*/bin
+/Landing/Landing/bin
 /Landing/wwwroot
 */node_modules
