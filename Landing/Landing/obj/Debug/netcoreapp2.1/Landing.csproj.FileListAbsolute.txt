@@ -58,4 +58,4 @@ C:\UMsite\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Razor\Pages\Desktop\In
 C:\UMsite\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Razor\Pages\Mobile\Index.g.cshtml.cs
 D:\src\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Razor\Pages\Desktop\Index.g.cshtml.cs
 D:\src\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Razor\Pages\Mobile\Index.g.cshtml.cs
-D:\src\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Landing.csprojAssemblyReference.cache
+D:\src\UM_site\Landing\Landing\obj\Debug\netcoreapp2.1\Razor\Pages\Mobile\Logo.g.cshtml.cs

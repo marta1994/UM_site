@@ -2,14 +2,6 @@
 @model Landing.Pages.Mobile.IndexModel
 
 <div class="mobile-device">
-    <h2 class="main-logo">Logo Place</h2>
-
-    <div class="logo-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-        laboris nisi ut aliquip ex ea commodo consequat.
-    </div>
-
+    @await Html.PartialAsync("~/Pages/Mobile/Logo.cshtml", new Mobile.LogoModel())
 </div>
 
