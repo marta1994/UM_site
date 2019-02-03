@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <Folder Include="Controllers\" />
+    <Folder Include="Scripts\" />
     <Folder Include="wwwroot\css\" />
   </ItemGroup>
 

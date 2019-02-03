@@ -7,4 +7,5 @@
 /Landing/Landing/obj
 /Landing/Landing/bin
 /Landing/wwwroot
+!Landing/wwwroot/images
 */node_modules

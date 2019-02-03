@@ -1,7 +1,75 @@
-﻿@page
-@model Landing.Pages.Mobile.IndexModel
+﻿@model Landing.Pages.Mobile.IndexModel
 
 <div class="mobile-device">
-    @await Html.PartialAsync("~/Pages/Mobile/Logo.cshtml", new Mobile.LogoModel())
+    <div class="page page0">
+        @await Html.PartialAsync("~/Pages/Mobile/Logo.cshtml", new Mobile.LogoModel())
+    </div>
+    <div class="page page1">
+        @await Html.PartialAsync("~/Pages/Mobile/Step.cshtml", new Mobile.StepModel())
+    </div>
+
+    <script>
+        function animateCss(element, animationName, callback) {
+            const node = document.querySelector(element)
+            node.classList.add('animated', animationName)
+
+            function handleAnimationEnd() {
+                node.classList.remove('animated', animationName)
+                node.removeEventListener('animationend', handleAnimationEnd)
+
+                if (typeof callback === 'function') callback()
+            }
+
+            node.addEventListener('animationend', handleAnimationEnd)
+        }
+
+        var initPages = function () {
+            var pagesCount = 2;
+            var allPages = [];
+            for (var i = 0; i < pagesCount; ++i) {
+                allPages.push("page" + i);
+            }
+            allPages.forEach(p => $("." + p).hide());
+            $("." + allPages[0]).show();
+
+            var touchStartPoint = null;
+            var currentPageNum = 0;
+
+            jQuery("body").on("touchstart", function (e) {
+                touchStartPoint = {
+                    X: e.changedTouches[0].pageX,
+                    Y: e.changedTouches[0].pageY
+                };
+            });
+
+            jQuery("body").on("touchend", function (e) {
+                if (!touchStartPoint) return;
+                var endPoint = {
+                    X: e.changedTouches[0].pageX,
+                    Y: e.changedTouches[0].pageY
+                };
+                var goToNext = endPoint.Y - touchStartPoint.Y > 5;
+                var goToPrev = endPoint.Y - touchStartPoint.Y < -5;
+                if (goToPrev && currentPageNum < pagesCount - 1) {
+                    currentPageNum++;
+                    animateCss("." + allPages[currentPageNum - 1], "fadeOutUp", function () {
+                        $("." + allPages[currentPageNum - 1]).hide();
+                        $("." + allPages[currentPageNum]).show();
+                        animateCss("." + allPages[currentPageNum], "fadeInUp");
+                    });                    
+                } else if (goToNext && currentPageNum > 0) {
+                    currentPageNum--;
+                    animateCss("." + allPages[currentPageNum + 1], "fadeOutDown", function () {
+                        $("." + allPages[currentPageNum + 1]).hide();
+                        $("." + allPages[currentPageNum]).show();
+                        animateCss("." + allPages[currentPageNum], "fadeInDown");
+                    });
+                }
+                touchStartPoint = null;
+            });
+        }
+
+        $(document).ready(initPages);
+    </script>
 </div>
 
