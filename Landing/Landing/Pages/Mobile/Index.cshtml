@@ -5,7 +5,13 @@
         @await Html.PartialAsync("~/Pages/Mobile/Logo.cshtml", new Mobile.LogoModel())
     </div>
     <div class="page page1">
-        @await Html.PartialAsync("~/Pages/Mobile/Step.cshtml", new Mobile.StepModel())
+        @await Html.PartialAsync("~/Pages/Mobile/Step.cshtml", new Mobile.StepModel(
+       "/images/ring.jpg",
+       "Step header",
+       @"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat."))
     </div>
 </div>
 

@@ -39,24 +39,43 @@
             background-color: @logo-text-background;
             color: @font-color;
             padding: 20px 40px;
-            font-size: 12px;
+            font-size: @text-font-size;
         }
     }
 
     .step-page {
         background-image: @step-background-image;
 
+        @top-margin: 80px;
+        @img-height: 250px;
+        @img-margin: 7px;
+
         .step-image-wrapper {
+            position: absolute;
+            background-color: @accent-color;
+            width: 100%;
+            top: @top-margin;
+
             .step-header {
                 margin: 0;
+                position: absolute;
+                color: @font-color;
             }
 
             .step-image {
+                width: 100%;
+                height: @img-height;
+                object-fit: cover;
+                margin: @img-margin 0;
             }
         }
 
         .step-content {
-
+            position: absolute;
+            top: @top-margin + @img-height + @img-margin * 2;
+            color: @font-color;
+            font-size: @text-font-size;
+            margin: 20px 35px;
         }
     }
 }
