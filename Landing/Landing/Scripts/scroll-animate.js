@@ -1,4 +1,4 @@
-var itemClassPrefix = "page";
+﻿var itemClassPrefix = "page";
 var animatedClass = "animated";
 var animationendEvent = "animationend";
 
