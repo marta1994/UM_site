@@ -45,8 +45,17 @@ var initPages = function () {
     for (var i = 0; i < pagesCount; ++i) {
         allPages.push(itemClassPrefix + i);
     }
-    allPages.forEach(p => jqClass(p).hide());
+    allPages.forEach(p => {
+        jqClass(p).hide();
+        setDuration(p, "500ms");
+    });
     jqClass(allPages[0]).show();
+}
+
+var setDuration = function (className, duration) {
+    jqClass(className)
+        .css("-webkit-animation-duration", duration)
+        .css("animation-duration", duration);
 }
 
 var getMoveDirection = function (endPoint, startPoint) {
