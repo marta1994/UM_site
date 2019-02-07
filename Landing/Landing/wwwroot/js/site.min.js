@@ -59,8 +59,8 @@ var setDuration = function (className, duration) {
 }
 
 var getMoveDirection = function (endPoint, startPoint) {
-    if (Math.abs(endPoint.Y - startPoint.Y) < 5) {
-        MoveDirection.None;
+    if (Math.abs(endPoint.Y - startPoint.Y) < 70) {
+        return MoveDirection.None;
     }
     if (endPoint.Y > startPoint.Y) {
         return MoveDirection.Down;

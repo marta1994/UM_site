@@ -3,11 +3,13 @@
 <div class="step-page page-background">
     <div class="step-image-wrapper">
         <h3 class="step-header">@Model.Header</h3>
-        <img class="step-image" src="@Model.ImageSource"/>
+        <img class="step-image" src="@Model.ImageSource" />
     </div>
 
     <div class="step-content">
         @Model.TextContent
     </div>
+
+    @await Html.PartialAsync("~/Pages/Mobile/IconLine.cshtml", new Mobile.IconLineModel())
 </div>
 
