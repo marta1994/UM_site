@@ -8,5 +8,6 @@
 /Landing/Landing/bin
 /Landing/wwwroot
 !Landing/wwwroot/images
+!Landing/wwwroot/lib
 /Landing/Landing/node_modules
 /Landing/node_modules
