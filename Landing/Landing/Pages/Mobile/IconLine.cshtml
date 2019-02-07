@@ -3,7 +3,7 @@
 <div class="icon-line">
     @foreach (var icon in Model.IconItems)
     {
-        <a class="icon-link" href="@icon.Link">
+        <a class="icon-link @icon.Class" href="@icon.Link">
             <img class="icon-image" src="@icon.Icon" />
         </a>
     }
