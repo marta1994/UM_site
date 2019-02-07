@@ -2,7 +2,7 @@
 var animatedClass = "animated";
 var animationendEvent = "animationend";
 
-var pagesCount = 2;
+var pagesCount = 3;
 var allPages;
 
 var MoveDirection = {

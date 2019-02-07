@@ -4,7 +4,7 @@
     width: 100%;
     height: 100%;
     overflow-y: hidden;
-    background-image: @logo-background-image;
+    background-image: @main-background-image;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -42,6 +42,8 @@
     }
 
     .step-page {
+        color: @font-color;
+
         @top-margin: 80px;
         @img-height: 250px;
         @img-margin: 10px;
@@ -55,10 +57,9 @@
             .step-header {
                 margin: 0;
                 position: absolute;
-                color: @font-color;
                 right: 0;
                 top: 0;
-                font-size: @step-header-size;
+                font-size: @header-font-size;
                 opacity: 0.65;
             }
 
@@ -73,9 +74,55 @@
         .step-content {
             position: absolute;
             top: @top-margin + @img-height + @img-margin * 2;
-            color: @font-color;
             font-size: @text-font-size;
             margin: 20px 35px;
+        }
+    }
+
+    .about-page {
+        color: @font-color;
+
+        @top-image-margin: 140px;
+        @img-height: 280px;
+        @img-margin: 20px;
+        @img-header-gap: 10px;
+        @sub-header-height: 40px;
+
+        .about-header {
+            position: absolute;
+            right: 10px;
+            top: @top-image-margin - @sub-header-height - 2 * @img-header-gap - @header-font-size;
+            font-size: @header-font-size;
+        }
+
+        .about-sub-header {
+            position: absolute;
+            right: 10px;
+            top: @top-image-margin - @sub-header-height - @img-header-gap;
+            width: 70%;
+            text-align: right;
+            line-height: @sub-header-height / 2;
+        }
+
+        .about-image-wrapper {
+            position: absolute;
+            background-color: @accent-color;
+            width: 100%;
+            top: @top-image-margin;
+
+            .about-image {
+                width: 100%;
+                height: @img-height;
+                object-fit: cover;
+                margin-bottom: @img-margin;
+            }
+        }
+
+        .about-content {
+            position: absolute;
+            top: @top-image-margin + @img-height + @img-margin;
+            margin: 10px 35px;
+            font-size: @text-font-size;
         }
     }
 }

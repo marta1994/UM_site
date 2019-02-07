@@ -1,3 +1,4 @@
+/// <binding AfterBuild='build-all' />
 var gulp = require("gulp"),
     fs = require("fs"),
     less = require("gulp-less"),
@@ -5,7 +6,8 @@ var gulp = require("gulp"),
     cleanCSS = require("gulp-clean-css"),
     rename = require("gulp-rename"),
     concat = require("gulp-concat"),
-    minify = require("gulp-minify");
+    minify = require("gulp-minify"),
+    gulpSequence = require('gulp-sequence');
 
 gulp.task("clean", function () {
     return gulp.src("wwwroot/css/*.*", {read: false})
@@ -38,6 +40,8 @@ gulp.task("min-js", function () {
         .pipe(gulp.dest("wwwroot/js/"))
 });
 
-gulp.task("build-styles", ["clean", "less", "min-css"]);
+gulp.task("build-styles", gulpSequence("clean", "less", "min-css"));
 
-gulp.task("build-js", ["bundle-js", "min-js"]);
+gulp.task("build-js", gulpSequence("bundle-js", "min-js"));
+
+gulp.task("build-all", ["build-js", "build-styles"]);
