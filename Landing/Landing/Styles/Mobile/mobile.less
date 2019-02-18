@@ -4,14 +4,20 @@
     width: 100%;
     height: 100%;
     overflow-y: hidden;
-    background-image: @main-background-image;
+    background-image: @main-background-portrait;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
+    @media only screen and (orientation: landscape) {
+        overflow-y: auto;
+        background-image: @main-background-landscape;
+    }
+    
     .page-background {
         width: 100%;
         height: 100%;
+        position: relative;
     }
 
     .page {
@@ -20,7 +26,6 @@
     }
 
     .logo-page {
-        position: absolute;
         top: 150px;
 
         .main-logo {

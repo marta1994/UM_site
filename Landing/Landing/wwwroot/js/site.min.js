@@ -95,6 +95,7 @@ var tryGoToPrev = function (currentPageNum) {
 }
 
 var makeItemsScrollable = function () {
+    if (!isPortaitMode())return;
 
     initPages();
 
@@ -121,6 +122,10 @@ var makeItemsScrollable = function () {
         }
         touchStartPoint = null;
     });
+}
+
+var isPortaitMode = function () {
+    return window.innerHeight > window.innerWidth;
 }
 
 $(document).ready(makeItemsScrollable);

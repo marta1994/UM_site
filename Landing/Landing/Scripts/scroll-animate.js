@@ -5,6 +5,11 @@ var animationendEvent = "animationend";
 var pagesCount = 3;
 var allPages;
 
+var ScreenMode = {
+    Portrait: 0,
+    Landscape: 1
+}
+
 var MoveDirection = {
     Up: -1,
     Down: 1,
@@ -94,8 +99,7 @@ var tryGoToPrev = function (currentPageNum) {
     return currentPageNum;
 }
 
-var makeItemsScrollable = function () {
-
+var portraitCase = function () {
     initPages();
 
     var touchStartPoint = null;
@@ -121,6 +125,28 @@ var makeItemsScrollable = function () {
         }
         touchStartPoint = null;
     });
+}
+
+var landscapeCase = function () {
+
+}
+
+var makeItemsScrollable = function () {
+    var screenMode = getScreenMode();
+    switch (screenMode) {
+        case ScreenMode.Portrait:
+            portraitCase();
+            break;
+        case ScreenMode.Landscape:
+            landscapeCase();
+            break;
+        default:
+            break;
+    } 
+}
+
+var getScreenMode = function () {
+    return window.innerHeight > window.innerWidth ? ScreenMode.Portrait : ScreenMode.Landscape;
 }
 
 $(document).ready(makeItemsScrollable);
