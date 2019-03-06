@@ -1,4 +1,6 @@
 /Landing/.vs
+/Ujin/.vs
+/Ujin/Ujin/wwwroot
 *.log
 *.dll
 *.exe
