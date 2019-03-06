@@ -1,6 +1,9 @@
 import { Component, Inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
+import { LocaleService } from 'angular-l10n';
+import { Language } from 'angular-l10n';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,8 +12,11 @@ import { HttpClient } from '@angular/common/http';
 export class AppComponent {
   title = 'app';
   public deviceType: DeviceType;
+  @Language() lang: string;
 
-  constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
+  constructor(
+    private locale: LocaleService,
+    http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
     http.get<DeviceType>(baseUrl + 'api/userAgent/DetermineDeviceType').subscribe(result => {
       this.deviceType = result;
     }, error => console.error(error));
@@ -22,6 +28,14 @@ export class AppComponent {
 
   public showDesktop(): boolean {
     return this.deviceType === DeviceType.Desktop || this.deviceType === DeviceType.Unknown;
+  }
+
+  public setEn() {
+    this.locale.setCurrentLanguage('en');
+  }
+
+  public setUa() {
+    this.locale.setCurrentLanguage('ua');
   }
 }
 

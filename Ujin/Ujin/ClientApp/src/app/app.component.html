@@ -1,2 +1,6 @@
 <app-mobile *ngIf="showMobile()"></app-mobile>
 <app-desktop *ngIf="showDesktop()"></app-desktop>
+
+<span> {{ 'app.test' | translate:lang }} </span>
+<button (click)="setEn()">En</button>
+<button (click)="setUa()">UA</button>
